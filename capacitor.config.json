@@ -2,9 +2,5 @@
   "appId": "com.vue.app",
   "appName": "vue-cap-app",
   "webDir": "dist",
-  "bundledWebRuntime": false,
-  "server": {
-    "url": "http://192.168.35.113:8080",
-    "cleartext": true
-  }
+  "bundledWebRuntime": false
 }
