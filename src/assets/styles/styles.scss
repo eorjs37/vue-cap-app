@@ -1,0 +1,12 @@
+.center {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: $white;
+  background-color: $blue;
+}

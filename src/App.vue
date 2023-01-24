@@ -1,10 +1,30 @@
 <template>
-  <h1>test</h1>
+  <Header></Header>
+
+  <router-view />
 </template>
 
 <script>
+import { App } from '@capacitor/app';
+import { onMounted } from '@vue/runtime-core';
+import { useRouter } from 'vue-router';
 export default {
-  name: 'App',
+  setup() {
+    const router = useRouter();
+    const addAppAddListener = () => {
+      App.addListener('backButton', e => {
+        if (e.canGoBack) {
+          router.back();
+        } else {
+          App.exitApp();
+        }
+      });
+    };
+
+    onMounted(() => {
+      addAppAddListener();
+    });
+  },
 };
 </script>
 
