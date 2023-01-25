@@ -12,4 +12,8 @@ const recordStart = () => {
   return VoiceRecorder.startRecording();
 };
 
-export { hasPermission, requestPermission, recordStart };
+const recordStop = () => {
+  return VoiceRecorder.stopRecording();
+};
+
+export { hasPermission, requestPermission, recordStart, recordStop };

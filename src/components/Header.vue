@@ -13,6 +13,7 @@ export default {};
   height: 44px;
   background-color: $gray-100;
   text-align: center;
+  padding: calc(env(safe-area-inset-top) + 8px) 0 0 0;
 }
 
 .header-title {
