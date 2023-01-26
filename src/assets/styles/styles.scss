@@ -17,3 +17,24 @@ body {
   background-color: $blue;
   font-size: inherit;
 }
+
+ul,
+li {
+  list-style: none;
+}
+
+.record-list {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.record-item {
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.text-center {
+  text-align: center;
+}
