@@ -7,6 +7,7 @@
 <script>
 import { onMounted } from '@vue/runtime-core';
 import { useRouter } from 'vue-router';
+import { notifs, requestPermission } from '@/utils/localNoti';
 export default {
   name: 'HomeView',
   setup() {
@@ -15,7 +16,9 @@ export default {
     const move = path => {
       router.push(path);
     };
-    onMounted(() => {});
+    onMounted(() => {
+      notifs();
+    });
 
     return {
       move,
